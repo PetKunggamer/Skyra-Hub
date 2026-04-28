@@ -6,9 +6,9 @@ local KEY_FILE        = "skyra_keysystem.txt"
 
 local games = {
     {
-        display = "One Piece: Divine",
-        uuid    = "11e4e38664c1c2701b4ab20ca07b65d2",
-        find    = { universe = 9688762372 }
+        display = "test",
+        uuid    = "",
+        find    = { universe = 111 }
     },
     {
         display = "Build A Farm Factory",
