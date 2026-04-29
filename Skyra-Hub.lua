@@ -2,6 +2,7 @@ local SKYRA_VERSION   = "1.0.0"
 local BASE_URL        = "https://api.luarmor.net/files/v4/loaders/"
 local LUARMOR_SDK_URL = "https://sdkapi-public.luarmor.net/library.lua"
 local DISCORD_URL     = "https://discord.gg/uS8u3Z9B4V"
+local Keylink1 = "https://ads.luarmor.net/get_key?for=-ijgpPcsbAQNy"
 
 local games = {
     {
@@ -636,8 +637,8 @@ local function buildUI()
     end)
 
     getKeyBtn.MouseButton1Click:Connect(function()
-        setStatus("Discord link copied!", "info")
-        if setclipboard then setclipboard(DISCORD_URL) end
+        setStatus("Key link copied!", "info")
+        if setclipboard then setclipboard(Keylink1) end
         task.delay(2, function()
             if statusWrap and statusWrap.Parent then
                 statusWrap.Visible = false
