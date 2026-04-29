@@ -1,14 +1,13 @@
 local SKYRA_VERSION   = "1.0.0"
 local BASE_URL        = "https://api.luarmor.net/files/v4/loaders/"
 local LUARMOR_SDK_URL = "https://sdkapi-public.luarmor.net/library.lua"
-local DISCORD_URL     = "https://discord.gg/YOUR_INVITE"
-local KEY_FILE        = "skyra_keysystem.txt"
+local DISCORD_URL     = "https://discord.gg/uS8u3Z9B4V"
 
 local games = {
     {
-        display = "test",
+        display = "",
         uuid    = "",
-        find    = { universe = 111 }
+        find    = { universe = 1 }
     },
     {
         display = "Build A Farm Factory",
@@ -20,15 +19,15 @@ local games = {
 local function saveKey(key)
     pcall(function()
         if writefile then
-            writefile(KEY_FILE, tostring(key))
+            writefile("Skyra-Key.txt", tostring(key))
         end
     end)
 end
 
 local function loadSavedKey()
     local ok, result = pcall(function()
-        if readfile and isfile and isfile(KEY_FILE) then
-            return readfile(KEY_FILE)
+        if readfile and isfile and isfile("Skyra-Key.txt") then
+            return readfile("Skyra-Key.txt")
         end
         return nil
     end)
