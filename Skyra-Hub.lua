@@ -6,14 +6,14 @@ local Keylink1 = "https://ads.luarmor.net/get_key?for=-ijgpPcsbAQNy"
 
 local games = {
     {
-        display = "",
-        uuid    = "",
-        find    = { universe = 1 }
-    },
-    {
         display = "Build A Farm Factory",
         uuid    = "91ac45f3fe547c6b245ac3e78cb81370",
         find    = { universe = 9839808865 }
+    },
+    {
+        display = "Garden Architect",
+        uuid    = "9cf0df6eb45377b823d28bca19dbdc47",
+        find    = { universe = 9815429127 }
     },
 }
 
