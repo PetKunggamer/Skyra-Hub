@@ -15,6 +15,11 @@ local games = {
         uuid    = "9cf0df6eb45377b823d28bca19dbdc47",
         find    = { universe = 9815429127 }
     },
+    {
+        display = "Shells",
+        uuid    = "e69a43d0dedd7b0852eba9abec739011",
+        find    = { universe = 10034440925 }
+    },
 }
 
 local function saveKey(key)
